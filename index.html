@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Тест</title>
+        <link rel="stylesheet"  href="assets/css/style.css"/>
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
+        <script src="assets/script.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+         <section id="form-otpravok" class="content">
+            <h1>Тест</h1>
+            <p>
+                Всё я спать завтра на работу (13.09 2:26)
+            </p>
+            <form>
+                <div class="main-form">
+                    <div>
+                        <p>Имя</p>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <p>Телефон</p>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                </div>
+                <div class="main-form1">
+                    <div>
+                        <p>E-mail</p>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </div>
+                <div>
+                    <p>Ваша цель</p>
+                    <div class="main-form2">
+                        <input type="radio" name="cell" id="cell1">
+                        <input type="radio" name="cell" id="cell2">
+                        <input type="radio" name="cell" id="cell3">
+                        <label for="cell1" class="da" id="labelcell1"></label>
+                        <p>Класс</p>
+                        <label for="cell2" class="da" id="labelcell2"></label>
+                        <p>Класс</p>
+                        <label for="cell3"class="da" id="labelcell3"></label>
+                        <p>Класс</p>
+                    </div>
+                </div>
+                <div class="main-form2">
+                    <input type="checkbox" name="gol" id="cell4">
+                    <label for="cell4" class="da1" id="labelcell4"></label>
+                    <p>Я согласен на обработку моих персональных данных</p>
+                </div>
+            </form>
+            <button onclick="SendMessage()" id="submit">Отправить</button>
+        </section>
+      
+    </body>
+</html>

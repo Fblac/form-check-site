@@ -1,0 +1,421 @@
+@font-face {
+    font-family:Manrope-Bold;
+    src: url(fonts/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family:Manrope-Regular;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family:Manrope-SemiBold;
+    src: url(fonts/Manrope-SemiBold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right,#ffffff ,#E6EBEF 47%);
+    font-family:Manrope-Regular;
+}
+ul {list-style: none;margin: 38px;}
+nav li{
+    display: inline-block;
+    margin: 0 27px;
+    text-transform: uppercase;
+    font-family:Manrope-Bold;
+    font-size: x-large;
+}
+header img{
+    width: 250px;
+}
+header {
+    display: flex;    
+    align-items: center;
+    width: 80%;
+    margin:40px auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.icon-menu{
+    display: flex;
+width: 100%;justify-content: space-evenly;}
+.icon-menu div{
+    padding: 15px;
+    width: 45px;
+    height: 45px;
+    margin: 0 15px;
+}
+.icon-menu object{
+    position: relative;
+    left: -38px;
+    top: -28px;
+    transform: scale(2);
+}
+.content{
+    width: 80%;
+    padding: 45px 10% 0 10%;
+}
+
+#main{
+    display: flex;
+flex-direction: column-reverse;align-items: center;}
+h1{
+    font-size: 54px;
+    letter-spacing: 1px;
+    font-family:Manrope-Bold;
+    font-weight: normal;
+}
+h2{
+    font-size: 41px;
+    font-family:Manrope-Bold;
+    font-weight: normal;
+}
+h4{
+    font-size: x-large;
+}
+#main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+p{
+    font-family:Manrope-SemiBold;
+    color: #404040;
+    font-size: 28px;
+}
+button{
+    border: 0;
+    padding: 17px 65px;
+    font-size: 35px;
+    background-color: #49a98c;
+    color: white;
+    margin-top: 4vh;
+    border-radius: 10px;
+    outline: 1px solid #49a98c;
+    outline-offset: 3px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 25px;
+    outline: 1px solid #3586ff00;
+}
+
+
+#kurs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#kurs > div{
+    display: flex;
+    margin-top: 55px;
+flex-direction: column;}
+.items-kurs{
+   background-color: #f1f4f8;
+   text-align: center;
+   width: 393px;
+   margin: 25px;
+   padding: 31px;
+   border-radius: 10px;
+   box-shadow: 0 0 15px #0000000f;
+}
+.items-kurs p{
+    font-family:Manrope-Regular;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.items-kurs img{
+    width: 350px;
+}
+
+
+#urok div{
+    padding: 6.2% 25% 7.2% 7%;
+    background-image: url('../img/5.jpg');
+    border-radius: 35px;
+background-position: bottom;background-size: cover;}
+
+.items-tren img{
+    height: 350px;
+}
+
+.items-tren h4{
+    font-size: 41px;
+}
+.items-tren h5{
+    font-size: 28px;
+}
+
+#urok img{
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+    border-radius: 36px;
+}
+
+#cartusl{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+flex-direction: column;}
+#cartusl > div img{
+    border-radius: 25px;
+    margin-right: 25px;
+}
+#cartusl > div p{
+    margin:15px 0;
+}
+.item-uslg{
+    background: #f1f4f8;
+    padding: 15px;
+    font-size: 25px;
+    font-family:Manrope-Bold;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+    margin-top: 10px;
+flex-direction: column;
+}
+#cartusl > div .main-islg{align-items: center;}
+.main-islg{
+    display: flex;
+    justify-content: space-between;
+    margin:45px 0;}
+.main-islg1{
+    margin: 15px 0;
+}
+
+.item-uslg span{
+    display: flex;
+    align-items: center;
+}
+.item-uslg span::before{
+    content: " ";
+    margin: 0 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.item-uslg #star::before{background-image: url(../img/star.svg);}
+.item-uslg #time::before{background-image: url(../img/time.svg);}
+.item-uslg #cald::before{
+    width: 14px; 
+    background-image: url(../img/calendar.svg);
+}
+.main-islg button{
+    margin: 0;
+}
+
+#cartusl1{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#cartusl1 p{
+    font-family:Manrope-Bold;
+}
+.main-islg2{
+flex-wrap: wrap;}
+
+#cartusl1 .main-islg div + div{text-align: center;}
+#cartusl1 .main-islg > div{width: 40%;margin: 3%;}
+#cartusl1 .main-islg .items-tren{
+    width: 40%;
+    background-color: #f1f4f8;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+margin: 2%;}
+#cartusl1 .check{
+    background-color: #49a98c;
+    color : #fff;
+}
+#cartusl1 label{
+    padding: 14px 38px;
+    font-family:Manrope-Bold;
+    background-color: #f1f4f8;
+    font-size: 32px;
+    margin: 25px 15px;
+    border-radius: 10px;
+    outline-offset: 3px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#cartusl1 label:hover{
+    outline: 1px solid #49a98c;
+    background-color: #49a98c;
+    color: white;
+}
+
+#about div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#about{
+    background-color: #f1f4f8;
+    padding: 145px 10% 145px 10%;
+    display: flex;
+    justify-content: space-between;
+flex-direction: column-reverse;align-items: center;}
+#about p{
+    margin: 25px 0;
+font-size: 15px;}
+#about img{
+    border-radius: 15px;
+    margin-bottom: 55px;
+width: 100%;}
+#kakrob h1{
+    text-align: center;
+    font-weight: bold;
+}
+#kakrob > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+margin-top: 48px;}
+#kakrob div div{
+    width: 45%;
+    margin: 2.5%;
+}
+#kakrob div div span{
+    background-color: #49a98c;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: x-large;
+}
+#kakrob div div h4{
+    margin: 10px 0;
+    font-weight: bold;
+font-size: 37px;}
+
+
+#form-otpravok{
+    padding: 125px 0;
+    margin: 45px auto;
+    background-color: #f1f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+#form-otpravok h1{
+    margin: 25px 0;
+}
+#form-otpravok > p{
+    text-align: center;
+    width: 68%;
+}
+form{
+    width: 74%;
+    margin-top:35px;
+}
+
+form .main-form{
+    display: flex;
+    justify-content: space-between;
+}
+form .main-form div{width: 45%;margin: 10px 2.5%; }
+form .main-form1 div{width: 95%;margin: 10px 2.5%;}
+form input[type='text'],form input[type='email']{
+    width: 90%;
+    padding: 15px 5%;
+    border-radius: 5px;
+    border: 1px solid #d5d5d5;
+    background-color: #f1f4f8;
+    margin-top: 5px;
+font-size: 28px;}
+input[type="radio"],input[type="checkbox"]{
+    display: none;
+}
+.da,.da1{
+    margin: 3px 5px;
+    display: inline-block;
+    width: 43px;
+    height: 41px;
+
+}
+.da{
+    background:url(../img/lol.png);
+    background-size: contain;
+background-repeat: no-repeat;}
+.da:hover{
+    animation: lol 0.5s;
+}
+.da::after{
+    content: '';
+    display: block;
+    border-radius: 50%;
+    margin: 12px;
+    width: 17px;
+    height: 17px;
+    background-color: #49a98c;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.da1::after{
+    content: '';
+    display: block;
+    background-image: url(../img/ok.png);
+    background-size: contain;
+    margin: 6.5px;
+    width: 27px;
+    height: 27px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+input[id="cell1"]:checked ~ label[for='cell1']::after,
+input[id="cell2"]:checked ~ label[for='cell2']::after,
+input[id="cell3"]:checked ~ label[for='cell3']::after,
+input[id="cell4"]:checked ~ label[for='cell4']::after{
+    opacity: 1;
+}
+.main-form2{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+flex-direction: row;}
+.main-form2 p{
+    margin: 0 5px;
+}
+form >div{
+    margin-top: 35px!important;
+}
+.da1{
+    background:url(../img/lol1.png);
+    background-size: contain;
+}
+form div .main-form2 p{
+    color: #000;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    margin: 45px 0;
+flex-direction: column;align-items: center;align-content: center;}
+@keyframes lol {
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}
+#cartusl > div{
+    margin-top: 15px;
+}
+
+
+
+

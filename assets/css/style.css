@@ -1,0 +1,224 @@
+@font-face {
+    font-family:Manrope-Bold;
+    src: url(fonts/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family:Manrope-Regular;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family:Manrope-SemiBold;
+    src: url(fonts/Manrope-SemiBold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right,#ffffff ,#c5cfd6 47%);
+    font-family:Manrope-Regular;
+}
+
+
+
+
+.content{
+    width: 80%;
+    padding: 45px 10% 0 10%;
+}
+
+#main{
+    display: flex;
+}
+h1{
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-family:Manrope-Bold;
+    font-weight: normal;
+}
+h2{
+    font-size: 34px;
+    font-family:Manrope-Bold;
+    font-weight: normal;
+}
+#main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+p{
+    font-family:Manrope-SemiBold;
+    color: #404040;
+}
+button{
+    border: 0;
+    padding: 17px 65px;
+    font-size: 17px;
+    background-color: #49a98c;
+    color: white;
+    margin-top: 4vh;
+    border-radius: 10px;
+    outline: 1px solid #49a98c;
+    outline-offset: 3px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 25px;
+    outline: 1px solid #3586ff00;
+}
+
+
+
+
+
+
+
+
+
+#form-otpravok{
+    padding: 125px 0;
+    margin: 45px auto;
+    background-color: #f1f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+#form-otpravok h1{
+    margin: 25px 0;
+}
+#form-otpravok > p{
+    text-align: center;
+    width: 50%;
+}
+form{
+    width: 45%;
+    margin-top:35px;
+}
+
+form .main-form{
+    display: flex;
+    justify-content: space-between;
+}
+form .main-form div{width: 45%;margin: 10px 2.5%; }
+form .main-form1 div{width: 95%;margin: 10px 2.5%;}
+form input[type='text'],form input[type='email'],form input[type='tel']{
+    width: 90%;
+    padding: 15px 5%;
+    border-radius: 5px;
+    border: 1px solid #d5d5d5;
+    background-color: #f1f4f8;
+    margin-top: 5px;
+    transition: all 0.5s;
+}
+input[type="radio"],input[type="checkbox"]{
+    display: none;
+}
+.da,.da1{
+    margin: 3px 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+}
+.da{
+    background:url(../img/lol.png);
+    background-size: contain;
+}
+.da:hover{
+    animation: lol 0.5s;
+}
+.da::after{
+    content: '';
+    display: block;
+    border-radius: 50%;
+    margin: 7px;
+    width: 11px;
+    height: 11px;
+    background-color: #49a98c;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.da1::after{
+    content: '';
+    display: block;
+    background-image: url(../img/ok.png);
+    background-size: contain;
+    margin: 4px;
+    width: 17px;
+    height: 17px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+input[id="cell1"]:checked ~ label[for='cell1']::after,
+input[id="cell2"]:checked ~ label[for='cell2']::after,
+input[id="cell3"]:checked ~ label[for='cell3']::after,
+input[id="cell4"]:checked ~ label[for='cell4']::after{
+    opacity: 1;
+}
+.main-form2{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.main-form2 p{
+    margin: 0 5px;
+}
+form >div{
+    margin-top: 35px!important;
+}
+.da1{
+    background:url(../img/lol1.png);
+    background-size: contain;
+}
+form div .main-form2 p{
+    color: #000;
+}
+
+
+@keyframes lol {
+    0%{transform: rotateZ(0deg);}
+    100%{transform: rotateZ(360deg);}
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+    #main div{
+        width: auto!important;
+    }
+    #urok div {
+        padding: 6.2% 50% 7.2% 7%!important;
+    }
+    .main-islg1{
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    .item-uslg {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 2228px) {
+    .content{
+        width: 60%;
+        padding: 45px 20% 0 20%;
+    }
+    header {
+        width: 60%;
+        margin:40px auto;
+    }
+    #urok img{
+        width: 60%!important;
+    }
+    #about{
+        padding: 145px 20% 145px 20%;
+    }
+}
